@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        *
+        {
+            height: 90%;
+        }
+       body
+        {
+            background-image: url("images/f3logol.jpg");
+            background-repeat: no-repeat fixed;
+            background-size: cover;   
+        }
+
+        .box
+        {
+            margin: auto;
+            margin-top: 3%;
+            justify-content: center;
+            height: 98%;
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+        }
+
+        .blank
+        {
+            height: 7%;
+        }
+
+        .head
+        {
+            text-align: center;
+            font-weight: bold;
+            height: 12%;
+            padding: 5px;
+            font-size: 41px;
+            animation-name: head;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 1s;
+            color: white;
+        }
+
+        @keyframes head{
+            from{
+                background-color: rgb(214, 23, 23);
+            }
+            to
+            {
+                background-color: rgb(22, 22, 211);
+            }
+        }
+
+        .desc
+        {
+            text-align: center;
+            height: 15%;
+            font-size: 18px;
+            padding: 80px;
+            margin: 20px;
+            padding-top: 20px;
+            margin-top: 2.5%;
+            color: white;
+            font-weight: 100;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+       .card
+       {
+            display: inline-block;
+            height: 14%;
+            width: 10%;
+            padding-top: 3%;
+            background-color: rgba(255, 166, 0, 0.89);
+            text-align: center;
+            margin-left: 26%;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+       } 
+
+       .card:hover
+       {
+            color: black;
+       }
+
+       .btn
+       {
+            color: white;
+            background-color: rgba(0, 0, 255, 0.774);
+            border-radius: 20px;
+            text-align: center;
+            width: 20%;
+            height: 8%;
+            padding-top: 1%;
+            margin: 8px;
+            margin-top: 28px;
+            margin-left: 39%;
+            display: block;
+            font-weight: bold;
+            font-size: 18px;
+       } 
+
+       .book
+        {
+            color: white;
+        }
+
+        .btn:hover
+       {
+            color: black;
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="blank"></div>
+        <div class="head">Department of Law</div>
+        <div class="desc">The Department of Law is a pioneer department of Invertis University.<br> Thr vision of our department is to become a centre of excellence in Computer Applications and impart innovation-oriented education for building globally competent and socially committed professionals.Our mission is to develop technically competent professionals and equip them for research, innovations, higher studies and entrepreneurship. Some of our courses are: </div>
+        <div class="card"><a>LLB</a></div>
+        <div class="card"><a>LLM</a></div>
+        <div class="btn"><a class="book" href="catalogue.html#l">View Books</a></div>
+    </div>
+</body>
+</html>

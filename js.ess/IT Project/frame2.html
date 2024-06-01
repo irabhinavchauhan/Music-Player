@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+          *
+        {
+            background-image: url("images/f3logo3.jpg");
+            background-repeat: no-repeat fixed;
+            background-size: cover;
+        }
+        .flex-container
+        {
+            display:flex;
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: center;
+        }
+
+        a 
+        {
+            background: none;
+        }
+
+        .head
+        { 
+            background: none;
+            padding: 24px;
+            text-align: center;
+            width: 80%;
+            height: 22%;
+            margin: 8px;
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            font-size: 20px;
+            animation-name: head;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 2.8s;
+            color: white;
+        }
+
+        @keyframes head{
+            from{
+                background-color: rgb(214, 23, 23);
+                margin-left: 8px;
+            }
+            to
+            {
+                background-color: rgb(22, 22, 211);
+            }
+        }
+
+        .card
+        { 
+            background: none;
+            background-color: rgb(255, 255, 255, 0.589);
+            padding: 22px;
+            text-align: center;
+            width: 80%;
+            height: 22%;
+            margin: 8px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover
+        {
+            box-shadow: 0px 5px 18px black; 
+            font-weight: bold;
+            background-color: rgba(255, 251, 215, 0.918);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="head">
+            <a>Category<a>
+        </div>
+        <div class="card">
+            <a href="DOCAinfo.html" target="frame3">Department of Computer Applications</a>
+        </div>
+        <div class="card">
+            <a href="DOETinfo.html" target="frame3">Department of Engineering & Technology</a>
+        </div>
+        <div class="card">
+            <a href="DOLinfo.html" target="frame3">Department of Law</a>
+        </div>
+        <div class="card">
+            <a href="DOMinfo.html" target="frame3">Department of Management</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        *
+        {
+            background-image: url("images/f3logo3.jpg");
+            background-repeat: no-repeat fixed;
+            background-size: cover;
+        }
+        .logo-area
+        {
+            
+            padding: 1%; 
+            text-align: center;
+        }
+
+        .logo-area img
+        {
+            border-radius: 4px;
+        }
+
+        .flex-container
+        {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: center;
+            border: 2px;
+            border-color: red;
+        }
+
+        a
+        {
+            background-image: none;
+            color: black;
+        }
+
+        .card
+        { 
+            background-image: none;
+            background-color: rgba(255, 255, 255, 0.616);
+            padding: 12px;
+            text-align: center;
+            width: 21%;
+            margin: 8px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+        }
+
+        .card:hover
+        {
+            box-shadow: 0px 5px 18px black; 
+            background-color: rgba(255, 251, 215, 0.918);;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+		<div class="logo-area">
+			<img src="images/logo.png" height="70" width="180">
+		</div>
+        <div class="flex-container">
+            <div class="card">
+                <a href="user.html" target="frame1, frame2, frame3">HOME</a>
+            </div>
+            <div class="card">
+                <a href="login.html" target="frame3">LOGIN</a>
+            </div>
+            <div class="card">
+                <a href="register.html" target="frame3">REGISTER</a>
+            </div>
+            <div class="card">
+                <a href="catalogue.html" target="frame3">CATALOGUE</a>
+            </div>
+           
+            
+        </div>
+			
+                    
+                
+	</header>
+</body>
+</html>

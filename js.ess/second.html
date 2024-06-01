@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>letarrayobject</h1>
+
+    <script>
+       let countries=
+       [
+            {name:"India", capital:"New Delhi", population:70000},
+            {name:"Bangladesh", capital:"Dhaka", population:20000},
+            {name:"China", capital:"Beijing", population:80000},
+            {name:"Sri Lanka", capital:"Colombo", population:1999},
+            {name:"Belgium", capital:"Brussels", population:1800}
+        ] 
+       
+        console.log("The name of the countries who's population is less than 2000 are: ");
+   
+        for(let i=0; i<countries.length; i++)
+        {
+            if(countries[i].population<2000)   //condition according to the question
+            {
+                console.log(countries[i].name);
+            }
+        }
+    </Script>
+    
+</body>
+</html>

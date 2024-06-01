@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        *
+        {
+            margin: 0;
+        }
+
+        html
+        {
+            background-image: url("images/f3logo1.jpg");
+            background-repeat: no-repeat fixed;
+            background-size: cover;
+        }
+
+        .container
+        {
+            margin-top: 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container h1
+        {
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 20px;
+            animation-name: h1;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 2.8s;
+            font-size: 50px;
+        }
+
+        @keyframes h1{
+            from{
+                color: rgb(214, 23, 23);
+            }
+            to
+            {
+                color: rgb(22, 22, 211);
+            }
+        }
+
+        .registration-form
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            color: black;
+            font-size: 18px;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .registration-form input, .registration-form select, .registration-form textarea
+        {
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            margin-right: 10px;
+            
+        }
+
+        .registration-form input
+        {
+            margin-left: 10px;
+        }
+
+        .registration-form input:focus, .registration-form textarea:focus
+        {
+            box-shadow: 0px 5px 20px black;
+        }
+
+        .registration-form .submit
+        {
+            width: 100%;
+            padding: 8px 0;
+            font-size: 20px;
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(58, 58, 248);
+        }
+
+        .registration-form .submit:hover
+        {
+            box-shadow: 0px 5px 20px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTRATION FORM</h1>
+        <form name="registration" class="registration-form" onsubmit="return formvalidation()">
+            <table>
+                <tr>
+                    <td><label for="studentid">Enter Student ID:</label>
+                    <input type="text" id="studentid" placeholder="Your Student ID" required></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Enter Your Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Enter Your Email:</label>
+                    <input type="text" name="email" id="email" placeholder="Your Email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Create  Password:</label>
+                    <input type="password" name="password" id="password" required placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        Male: <input type="radio" name="gender" value="male">
+                        Female: <input type="radio" name="gender" value="female">
+                        Others: <input type="radio" name="gender" value="others">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="state">Select Your State:&nbsp;&nbsp;&nbsp;</label>
+                        <select name="state" id="state">
+                            <option value="ap">Select</option>
+                            <option value="andhra">Andhra Pradesh</option>
+                            <option value="arunachal">Arunachal Pradesh</option>
+                            <option value="assam">Assam</option>
+                            <option value="bihar">Bihar</option>
+                            <option value="chhattusgarh">Chhattisgarh</option>
+                            <option value="goa">Goa</option>
+                            <option value="gujarat">Gujarat</option>
+                            <option value="harayana">Haryana</option>
+                            <option value="himachal">Himachal Pradesh</option>
+                            <option value="jharakhand">Jharkhannd</option>
+                            <option value="karnataka">Karnataka</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="madhya">Madhya Pradesh</option>
+                            <option value="maharasthra">Maharasthra</option>
+                            <option value="manipur">Manipur</option>
+                            <option value="meghalaya">Meghalaya</option>
+                            <option value="mizoram">Mizoram</option>
+                            <option value="nagaland">Nagaland</option>
+                            <option value="odisha">Odisha</option>
+                            <option value="punjab">Punjab</option>
+                            <option value="rajasthan">Rajasthan</option>
+                            <option value="sikkim">Sikkim</option>
+                            <option value="tamil">Tamil Nadu</option>
+                            <option value="telengana">Telengana</option>
+                            <option value="tripura">Tripura</option>
+                            <option value="uttarakhand">Uttarakhand</option>
+                            <option value="uttar">Uttar Pradesh</option>
+                            <option value="west">West Bengal</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" class="submit" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        *
+        {
+            height: 93%;
+        }
+       html
+        {
+            background-image: url("images/f3logo1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+    
+
+        .box
+        {
+            background: none;
+            margin: auto;
+            margin-top: 4%;
+            justify-content: center;
+            display: flex;
+            height: 100%;
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            flex-flow: column;
+        }
+
+        .blank
+        {
+            height: 2%;
+            font-size: 20px;
+            padding: 20px;
+            padding-top: 10px;
+        }
+
+        .heading
+        {
+            text-align: center;
+            font-weight: bold;
+            height: 20%;
+            padding: 20px;
+            padding-top: 25px;
+            animation-name: heading;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 1s;
+            font-size: 45px;
+        }
+
+        @keyframes heading{
+            from{
+                color: rgb(214, 23, 23);
+            }
+            to
+            {
+                color: rgb(22, 22, 211);
+            }
+        }
+
+        .description
+        {
+            text-align: justify;
+            margin-bottom: 30px;
+            font-size: 18px;
+            padding: 40px;
+            margin: 15px;
+            padding-top: 10px;
+            color: white;
+            font-weight: 100;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="blank"></div>
+        <marquee direction="right" behavior="alternate" style="color: white;  background-color: rgba(0, 0, 0, 0.5); padding: 10px; height: 6%; font-weight: bold;">WELCOME! &nbsp;WELCOME! &nbsp;WELCOME!</marquee>
+        <div class="heading">Online Library Management System</div>
+        <div class="description"><a>Hello Invertian,</a><br><br>This library website aims to provide a brief introduction to the facilities and services provided by the Invertis Library, library operating hours and other basic information pertaining to the library. By god's grace, we shall provide services and access for out Students.<br>In today's world there is an increasing need for timely information. People now need timely, accurate and advanced information for making decisions. Therefore, a lot of material is accessible in the internet but there are many factors hinder us from getting the greatest information. Our Library offers a variety of facilities and services online.
+        </div>
+
+    </div>        
+</body>
+</html>
